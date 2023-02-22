@@ -1,0 +1,198 @@
+body{
+    margin:0px;
+    font-family:'Times New Roman', Times, serif ;
+  }
+
+  .flex{
+    display: flex;
+  }
+  
+  .container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    /* position: fixed;  */
+    z-index: 50;
+    top: 0px;
+    background-color: rgb(240, 37, 37);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    width: 10%;
+    height: 100%;
+    background-image: url("https://www.thesouledstore.com/static/img/300x157-twitter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+  }  
+  .middle {
+    width: 60%;
+    height: 100%;
+    justify-content:space-evenly;
+    justify-content:left 20px;
+  }
+  .bottomNav{
+    width:100%;
+    height:60px;
+    background-color: white;
+    border-bottom: 2px solid grey;
+     position: sticky;
+     top:0px;
+     z-index: 2
+   
+  }
+  body{
+    height: 1000px;
+  }
+  .myBag{
+    /* width:100%; */
+    height:42px;
+    background-color: white;
+    /* border-bottom: 2px solid grey; */
+    margin-left:100px;
+   justify-content:center;
+    
+  }
+  /* .myBag>div{
+   
+    width:100%;
+  } */
+  .innerBag{
+    width:600px;
+    /* border-bottom: 2px solid grey; */
+    /* border:2px solid red; */
+   }
+    img{
+        
+    width:150px;
+    /* border:2px solid red;  */
+    margin-left: 45%;
+    margin-top: 20px;
+   
+  } 
+  /* .shopImg{
+   width:100px;
+   height:200px;
+   border:2px solid black;
+   display: flex;
+   justify-content: center;
+  } */
+  .text{
+    /* border:2px solid red; */
+    width:25%;
+    height:100px;
+    margin-left: 550px
+   /* text-align:justify */
+   /* justify-content: space-between;
+   flex-direction: column; */
+  }
+  .text>div>h2{
+   
+  /* display: flex; */
+   text-align: justify;
+    /* width:500px; */
+    /* border:2px solid red; */
+    margin-left: 20px;
+
+  }
+  .text>div>p{
+   
+    /* display: flex; */
+     /* text-align: justify; */
+      /* width:500px; */
+      /* border:2px solid red; */
+      /* margin-left:0px; */
+  
+    }
+
+    .popular>div{
+        /* border:2px solid red; */
+        /* width:25%; */
+        /* border:2px solid red; */
+        /* background-color: aliceblue; */
+        font-size:small;
+        background-color: white;
+       width:70px;
+         height:30px
+    }
+    .popular{
+        /* border:2px solid red; */
+        width:21%;
+        margin: auto;
+        display: grid;
+       grid-template-columns: repeat(4,1fr);
+        padding: 25px;
+        height:15vh;
+        background-color: #f6f7f9;
+        gap: 10px;
+
+    }
+    #pop{
+        /* border:2px solid red; */
+        height: 25px;
+        width:25%;
+        margin: auto;
+        background-color: #f6f7f9;
+        padding-top: 2px;
+    }
+      h3{
+    
+       text-align: center;
+       
+      }
+      button{
+        display: flex;
+       justify-content: center;
+         margin-left: 45%;
+         margin-top: 20px;
+         color: #148c8d;
+         border-color: #148c8d;
+         padding: 10px;
+      }
+      /* .center{
+        border:2px solid red;
+        width:500px
+      } */
+      .home{
+        background-color: red;
+        text-align: center;
+        color: white;
+       font-weight:normal;
+      }
+      #over{
+        text-align: center;
+        font-size: 40px
+      }
+      .footer{
+        /* border:2px solid red; */
+        justify-content: space-around;
+        background-color: #e6e7e8;
+      }
+      .footer>div>h2{
+        color:#ed2e30
+      }
+      .footer>div>p:hover{
+        color:#ed2e30 ;
+        font-weight: bold;
+      }
+      .box1 h4:hover{
+        background-color: white;
+        
+      }
+      .class2 h4:hover{
+        background-color: white;
+        
+      }
+      .box3 h4:hover{
+        background-color: white;
+        
+      }
+      #exp{
+        background-color:  #e6e7e8;
+      }
+   
