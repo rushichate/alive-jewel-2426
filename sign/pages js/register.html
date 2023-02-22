@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <style>
+                *{
+            margin: 0px;
+        }
+        .maincontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 750px;
+            background-color: #e6e7e8;
+        }
+        .mini{
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-card{
+            background-color: #ffffff;
+            padding: 40px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+        .header>h4{
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-family: sans-serif;
+            color: #6b6c6b;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            border: solid #6b6c6b 1px;
+            margin-bottom: 15px;
+        }
+
+        .child-1{
+            padding: 10px 65px;
+        }
+        .child-2{
+            padding: 10px 55px;
+            background-color: #117a7a;
+        }
+        .child-1>a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .child-2>a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .loging-here{
+            background-color: #e6e7e8;
+            padding: 30px;
+            border: solid #6b6c6b 1px;
+        }
+
+        .loging-here>input{
+            display: block;
+            border-radius: 10px;
+            border: solid #c1c6c1 1px;
+            padding: 10px 94px 10px 10px;
+            margin: 25px 0px 25px 18px;
+        }
+
+        .loging-here>button{
+            display: block;
+            margin: auto;
+            padding: 11px 100px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: #117a7a;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .loging-here>p{
+            margin: 20px 40px 10px 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .loging-here>p>a{
+            color: #ee5456;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .gender>input{
+            display: block;
+        }
+        .gender>label{
+            display: block;
+        }
+        .gender{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .gender>p{
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="mini">
+            <div class="login-card">
+                <div class="header">
+                    <h4>Register with The Souled Store</h4>
+                </div>
+                <nav class="nav">
+                    <div class="child-1">
+                        <a href="/sign/pages js/login.html">LOGIN</a>
+                    </div>
+                    <div class="child-2">
+                        <a href="/sign/pages js/register.html">REGISTER</a>
+                    </div>
+                    </nav>
+                <div class="loging-here" id="register-sucessfully">
+                    <input type="text" placeholder="First Name" id="firstName">
+                    <input type="text" placeholder="Last Name" id="lastName">
+                    <input type="text" placeholder="Email" id="email">
+                    <input type="text" placeholder="Create Password" id="password">
+                    <div class="gender">
+                        <p>Gender</p>
+                        <input type="radio" name="gender" id="Male" value="male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female" value="female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <button id="register">REGISTER</button>
+                    <p>Already a Customer?<a href="/sign/pages js/login.html">Login</a></p>
+                    <p>Login as Admin?<a href="/sign/pages js/register.html">Click Here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/sign/pages js/register.js"></script>
+</html>
