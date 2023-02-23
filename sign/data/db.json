@@ -9,7 +9,8 @@
   ],
   "users": [
     {
-      "name": "Devesh Suryawanshi",
+      "firstName": "Devesh",
+      "lastName": "Suryawanshi",
       "email": "devesh@gmail.com",
       "password": "devesh123",
       "phone": "2233141122",
@@ -78,6 +79,30 @@
       "password": "akash123",
       "gender": "male",
       "id": 9
+    },
+    {
+      "firstName": "Ranjit",
+      "lastName": "Sharma",
+      "email": "ranjit@gmail.com",
+      "password": "ranjit123",
+      "gender": "male",
+      "id": 10
+    },
+    {
+      "firstName": "Rajesh",
+      "lastName": "Kumavat",
+      "email": "rajesh@gmail.com",
+      "password": "rajesh123",
+      "gender": "male",
+      "id": 11
+    },
+    {
+      "firstName": "Soham",
+      "lastName": "Shivastav",
+      "email": "soham@gmail.com",
+      "password": "soham123",
+      "gender": "male",
+      "id": 12
     }
   ],
   "women": [
