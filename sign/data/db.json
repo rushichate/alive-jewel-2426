@@ -103,6 +103,14 @@
       "password": "soham123",
       "gender": "male",
       "id": 12
+    },
+    {
+      "firstName": "naman",
+      "lastName": "choun",
+      "email": "naman@gmail.com",
+      "password": "naman123",
+      "gender": "male",
+      "id": 13
     }
   ],
   "women": [
