@@ -4,44 +4,50 @@ let Login_Btn = document.getElementById("login-btn")
 let loginSucessfully = document.getElementById("login-sucessfully");
 let clickHereMassageBtn = document.getElementById("show-here");
 let card = document.getElementById("card");
-
+let admin = document.getElementById("Username");
 
 Login_Btn.addEventListener("click", ()=>{
     let Email = email.value;
     let Password = password.value;
+    let Admin = admin.value;
 
     let obj = {
         email: Email,
-        password: Password
+        password: Password,
+        admin: Admin
     }
 
-    if(obj.email == "" && obj.password == ""){
+    if(obj.email == "" && obj.password == "" && obj.admin == ""){
         alert("wrong credentials");
-    }else if(obj.email==""){
+    }else if(obj.admin == ""){
+        alert("Invalid Username");
+    }
+    else if(obj.email==""){
         alert("Invalid Email");
-    }else if(obj.password == ""){
-        alert("Invalid password");
-    }else{
+    }
+    else if(obj.password==""){
+        alert("Invalid Password");
+    }
+    else{
         login(obj);
     }
-    
 })
 
 function login(obj){
-    fetch(`http://localhost:3000/users`)
+    fetch(`http://localhost:3000/admins`)
     .then((res)=> res.json())
     .then((data)=>{
         let count = 0;
         data.forEach((e) => {
-            if(e.email == obj.email && e.password == obj.password){
+            if(e.email == obj.email && e.password == obj.password && e.admin == obj.admin){
                 display();
-                alert("login SucessfSully");
+                alert("login Sucessfully");
             }else{
                 count++;
             }
         });
-        if(count == data.length){
-            alert("wrong credentials");
+        if(count==data.length){
+            alert("wrong credentials")
         }
     })
     .catch((error)=>{
