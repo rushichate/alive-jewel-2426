@@ -1,0 +1,157 @@
+
+
+
+let container=document.getElementById("product-container")
+let nameasc=document.getElementById("AtoZ")
+let namedsc=document.getElementById("ZtoA")
+let priceasc=document.getElementById("LtH")
+let pricedsc=document.getElementById("HtL")
+let calvinbtn=document.getElementById("calvin")
+let dieselbtn=document.getElementById("diesel")
+let turtlebtn=document.getElementById("turtle")
+let raymondbtn=document.getElementById("raymond")
+let adidasbtn=document.getElementById("adidas")
+
+calvinbtn.addEventListener("click",()=>{
+    let filtered=fetcheddata.filter((element)=>{
+      if(element.brandName==="Calvin Klein"){
+        return true
+      }else{
+        return false;
+      }
+    })
+    displayproducts(filtered)
+   })
+   dieselbtn.addEventListener("click",()=>{
+      let dieselfilter=fetcheddata.filter((element)=>{
+        if(element.brandName==="Diesel"){
+          return true
+        }else{
+          return false;
+        }
+      })
+      displayproducts(dieselfilter)
+     })
+     turtlebtn.addEventListener("click",()=>{
+      let turtlefilter=fetcheddata.filter((element)=>{
+        if(element.brandName==="Turtle"){
+          return true
+        }else{
+          return false;
+        }
+      })
+      displayproducts(turtlefilter)
+     })
+     raymondbtn.addEventListener("click",()=>{
+      let raymondfilter=fetcheddata.filter((element)=>{
+        if(element.brandName==="Raymond"){
+          return true
+        }else{
+          return false;
+        }
+      })
+      displayproducts(raymondfilter)
+     })
+     adidasbtn.addEventListener("click",()=>{
+      let adidasfilter=fetcheddata.filter((element)=>{
+        if(element.brandName==="Adidas"){
+          return true
+        }else{
+          return false;
+        }
+      })
+      displayproducts(adidasfilter)
+     })
+     //let lowdata=[];
+nameasc.addEventListener("click",()=>{
+    let lowdata=fetcheddata.sort(function(a,b){
+        if(a.brandName>b.brandName) return 1;
+        if(a.brandName<b.brandName) return -1;
+        return 0;
+    });
+    displayproducts(lowdata);
+})//let highdata=[];
+namedsc.addEventListener("click",()=>{
+   let highdata=fetcheddata.sort(function(a,b){
+        if(a.brandName>b.brandName) return -1;
+        if(a.brandName<b.brandName) return 1;
+        return 0;
+        });
+    displayproducts(highdata);
+})
+//let lowprice=[];
+priceasc.addEventListener("click",()=>{
+   let lowprice=fetcheddata.sort(function(a,b){
+        return a.price-b.price;
+        });
+    displayproducts(lowprice);
+})
+//let highprice=[];
+pricedsc.addEventListener("click",()=>{
+    let highprice=fetcheddata.sort(function(a,b){
+        return b.price-a.price;
+        });
+    displayproducts(highprice);
+})
+   
+
+
+fetch(`http://localhost:3000/women`)
+.then((responseobj)=>{
+    return responseobj.json();
+})
+.then((actualdata)=>{
+    console.log(actualdata)
+    fetcheddata=actualdata
+    displayproducts(actualdata)
+})
+.catch((error)=>{
+    console.log(error)
+})
+function displayproducts(data){
+    container.innerHTML=null
+    data.forEach(element => {
+        let card=document.createElement("div")
+    let image=document.createElement("img")
+    image.setAttribute("src",element.image)
+    // let name=document.createElement("h2")
+    // name.innerText=element.name;
+    let price=document.createElement("h3")
+    price.innerText= "₹"+element.price;
+    let offer=document.createElement("p")
+    offer.innerText = "30-60% OFF";
+    let brandname=document.createElement("h4")
+    brandname.innerText=element.brandName
+    let desc=document.createElement("p")
+    desc.innerText=element.desc;
+    let cartbtn=document.createElement("button")
+    cartbtn.innerText="Add To Cart"
+    cartbtn.addEventListener("click",()=>{
+
+        let cartdata=JSON.parse(localStorage.getItem("cart")) || [];
+        //let temp=[]
+ 
+        let alreadypresent=false;
+
+        for(let i=0;i<cartdata.length;i++){
+          if(cartdata[i].id===element.id){
+            alreadypresent=true;
+          }
+        }
+        if(alreadypresent===true){
+          alert("Item already in cart ")
+        }else{
+          
+          
+          cartdata.push(element)
+        localStorage.setItem("cart",JSON.stringify(cartdata));
+        alert("item successfully added")
+        }
+        
+        })
+
+        card.append(image,brandname,desc,price,offer,cartbtn)
+        container.append(card);
+    });
+}
+
