@@ -96,7 +96,7 @@ pricedsc.addEventListener("click",()=>{
    
 
 
-fetch(`http://localhost:3000/men`)
+fetch(`http://localhost:3000/women`)
 .then((responseobj)=>{
     return responseobj.json();
 })
@@ -129,7 +129,7 @@ function displayproducts(data){
     cartbtn.addEventListener("click",()=>{
 
         let cartdata=JSON.parse(localStorage.getItem("cart")) || [];
-        
+        //let temp=[]
  
         let alreadypresent=false;
 
