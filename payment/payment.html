@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6e7e8;
+        }
+        .main_container{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            margin-top: 100px;
+            padding: 30px;
+            background-color: #ffff;
+        }
+        .container>h1{
+            background-color: #ffff;
+            margin-bottom: 15px;
+        }
+        .mini>div{
+            display: flex;
+            justify-content: center;
+            background-color: #ffff;
+        }
+        .mini>div>img{
+            width: 250px;
+            margin: 20px 0px;
+        }
+        .mini>p{
+            text-align: center;
+            background-color: #17a2b8;
+            padding: 10px 20px;
+        }
+        .inp_container{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #ffff;
+        }
+        .inp_container>input{
+            display: block;
+            margin: 15px 10px;
+            padding: 10px 300px 10px 10px;
+            background-color: #ffff;
+            border-radius: 5px;
+        }
+        .inp_container :nth-child(5){
+            margin: auto;
+            padding: 10px 40px; 
+            border-radius: 5px;
+            background-color: rgb(251, 71, 71);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <h1>PAYMENT</h1>
+            <div class="mini">
+                <p>Accepted Card</p>
+                <div>
+                    <img src="/payment/Screenshot 2023-02-24 163052.png" alt="error">
+                </div>
+                <form action="" method="get" class="inp_container">
+                    <input type="text" name="CardNumber" id="cardNo" placeholder="Enter 16 digits card number">
+                    <input type="text" name="Exp_Month" id="expMonth" placeholder="Exp Month">
+                    <input type="text" name="Exp_Year" id="expYear" placeholder="Exp Year">
+                    <input type="text" name="CVV" id="CVV" placeholder="CVV">
+                    <input type="submit" id="submitBtn">
+                </form>
+            </div>
+            <div class="mini"></div>
+        </div>
+    </div>
+</body>
+<script src="/payment/payment.js"></script>
+</html>
