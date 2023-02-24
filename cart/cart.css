@@ -46,29 +46,21 @@ body{
      z-index: 2
    
   }
-  body{
-    height: 1000px;
-  }
+
   .myBag{
-    /* width:100%; */
     height:42px;
     background-color: white;
-    /* border-bottom: 2px solid grey; */
+  
     margin-left:100px;
    justify-content:center;
     
   }
-  /* .myBag>div{
-   
-    width:100%;
-  } */
+
   .innerBag{
     width:600px;
-    /* border-bottom: 2px solid grey; */
-    /* border:2px solid red; */
    }
+   
     img{
-        
     width:150px;
     /* border:2px solid red;  */
     margin-left: 45%;
@@ -100,15 +92,42 @@ body{
     margin-left: 20px;
 
   }
-  .text>div>p{
-   
-    /* display: flex; */
-     /* text-align: justify; */
-      /* width:500px; */
-      /* border:2px solid red; */
-      /* margin-left:0px; */
+
+  /* continue shopping and login button */
+  .btn{
+     display: flex; 
+    /* border:2px solid red; */
+   width:372px;
+    /* font-size: 10px; */
+    margin-left: 550px;
+  }
+  .btn>button{
+    border:2px solid #148c8d;
+   /* background-color: #148c8d;  */
+ 
+  /* color: white; */
   
-    }
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* font-size: 15px; */
+  
+  margin:10px;
+  width:50%
+  
+  } 
+  #cbtn{
+    font-weight: bold;
+    font-size: 12px;
+  }
+  #login{
+    font-weight: bold;
+    color:white;
+    background-color: #148c8d;
+
+  }
+  /* btn part ends */
+
 
     .popular>div{
         /* border:2px solid red; */
@@ -194,5 +213,16 @@ body{
       }
       #exp{
         background-color:  #e6e7e8;
+      }
+      .contact{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .contact i{
+        padding-left: 10px;
+      }
+      .contact p{
+        font-size: 16px; 
       }
    

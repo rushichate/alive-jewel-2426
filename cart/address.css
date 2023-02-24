@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Times New Roman', Times, serif ;
+  }
+  
+  header{
+    display: flex;
+    width: 100%;
+    background-color: red;
+    cursor: pointer;
+  }
+ .left>button{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid black;
+    color: white;
+    cursor: pointer;
+  }
+  .men{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  
+  .kids{
+    border-right: 1px solid black;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .left{
+    display: flex;
+    margin-left: 450px;
+  }
+  
+  .right{
+    display: flex;
+    position: absolute;
+    right: 80px;
+    padding-top:20px ;
+  }
+  p{
+    padding-left: 20px;
+  }
+
+  /* bottom nav part */
+  .bottomNav{
+    width:100%;
+    height:60px;
+    background-color: white;
+    border-bottom: 2px solid grey;
+     position: sticky;
+     top:0px;
+     z-index: 2;
+    margin-bottom: 20px;
+  }
+  /* body{
+    height:9000px
+  } */
+
+  /* my bag part */
+  .myBag{
+    height:42px;
+    background-color: white;
+  
+    margin-left:100px;
+   justify-content:center;
+    
+  }
+
+  .innerBag{
+    width:600px;
+   }
+   .flex{
+    display: flex;
+  }
+
+/* footer part */
+.footer{
+    width: 100%;
+    transition: all 0.2s;
+    padding-top: 80px;
+    
+}
+  .detail{
+    background-color: #cdced1;
+}
+.table{
+    margin: 0 150px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.table div{
+    width: 230px;
+}
+.t-head{
+    font-size: 16px;
+    color: rgb(216, 4, 4);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.table li{
+    color:rgb(64, 63, 63);
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 18px;
+    list-style: none;
+    /* padding-right: 20px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.store{
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+.app{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  padding: 20px;
+}
+.contact{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contact i{
+  padding-left: 10px;
+}
+.contact p{
+  font-size: 16px; 
+}
+
+/* main part */
+#address{
+  display:flex
+}
+#product{
+  border:2px solid red
+}
+#main{
+  display: flex;
+  border:2px solid red;
+  width:80%;
+  margin: auto;
+  justify-content: space-between;
+}
+#left{
+  width:68%;
+  border:2px solid red;
+ 
+}
+#address{
+  justify-content: space-between;
+  border:2px solid red;
+}
+#right{
+  width:28%;
+  /* border:2px solid red; */
+}
+#right>div:nth-child(3){
+  border:2px solid red;
+  padding:12px;
+  margin-top: 10px;
+}
+#right>div:nth-child(4){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(5){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(6){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(7){
+  /* border:2px solid red; */
+  padding:12px;
+  margin-top:10px
+ 
+}
+#right>div:nth-child(8){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(9){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(10){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(11){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(1),#right>div:nth-child(12){
+  text-align: center;
+  padding:10px;
+  color:white;
+  background-color: #106f6f;
+  font-weight: bold;
+  border-radius: 2px;
+  
+}
+#right>div:nth-child(1){
+  margin-bottom: 15px;
+}
+#right>div:nth-child(2){
+  text-align: center;
+  padding:10px;
+  color:black;
+  background-color: #ffb951;
+  font-weight: bold;
+  border-radius: 2px;
+}
+#cartTotal{
+  border:2px solid red; margin-left: 200px;
+}
+#gst{
+  border:2px solid red; margin-left: 233px;
+}
+#sCharge{
+  border:2px solid red; margin-left: 150px;
+}
+#totalAmount{
+  border:2px solid red; margin-left: 173px
+}
+img{
+width: 100%;
+border-radius: 2px;
+
+}
+.card{
+ border:2px solid red;
+ width:250px
+
+}
+#imgdiv{
+  border:10px solid black;
+  width:250px;
+}
+#delbtn{
+  border:2px solid red;
+
+
+}
+#product{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+}
+ 
+  

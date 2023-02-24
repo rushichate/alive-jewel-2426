@@ -35,14 +35,12 @@ registerBtn.addEventListener("click", (e)=>{
         password: Password,
         gender: Gender
     }
-    if(registerUser(obj)){
-        Send(obj);
-        registerSucessfully();
-    }
+
+    registerUser(obj);
 })
 
 function registerSucessfully(){
-    register.innerHTML = "<h3>Registered Sucessfully</h3>"
+    alert("User Registered Sucessfully");
 }
 
 function Send(obj){
@@ -56,7 +54,10 @@ function Send(obj){
 }
 
 function registerUser(obj){
-    if(obj.firstName == ""){
+    if(obj.firstName == "" && obj.lastName == "" && obj.email == "" && obj.password == ""){
+        alert("Invaid credentials")
+        return false;
+    }else if(obj.firstName == ""){
         alert("Invalid FirstName")
         return false;
     }else if(obj.lastName == ""){
@@ -76,7 +77,8 @@ function registerUser(obj){
         return false;
     }
     else{
-        return true;
+        Send(obj);
+        registerSucessfully();
     }
 }
 

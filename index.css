@@ -318,8 +318,9 @@ transition: all 0.8s ease;
 }
 
 .input.active {
-width: 350px;
+width: 200px;
 right: 100px;
+padding-left: 10px;
 }
 
 .search-box:hover > .btn{

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/index.css">
     <style>
-                *{
+        *{
             margin: 0px;
         }
         .maincontainer{
@@ -46,18 +46,10 @@
         }
 
         .child-1{
-            padding: 10px 65px;
+            padding: 10px 134px;
+            background-color: #343a40;
         }
-        .child-2{
-            padding: 10px 55px;
-            background-color: #117a7a;
-        }
-        .child-1>a{
-            text-decoration: none;
-            color: black;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .child-2>a{
+        .child-1>p{
             text-decoration: none;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,10 +73,10 @@
             display: block;
             margin: auto;
             padding: 11px 100px;
-            border-radius: 5px;
+            border-radius: 10px;
             border: none;
             color: white;
-            background-color: #117a7a;
+            background-color: #343a40;
             font-weight: 700;
             margin-bottom: 15px;
         }
@@ -96,22 +88,6 @@
         .loging-here>p>a{
             color: #ee5456;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .gender>input{
-            display: block;
-        }
-        .gender>label{
-            display: block;
-        }
-        .gender{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .gender>p{
-            font-weight: 900;
         }
     </style>
 </head>
@@ -132,35 +108,22 @@
     <!-- CARD -->
     <div class="maincontainer">
         <div class="mini">
-            <div class="login-card">
-                <div class="header" id="register-sucessfully">
-                    <h4>Register with The Souled Store</h4>
+            <div class="login-card" id="card">
+                <div class="header">
+                    <h4>Fill the bellow form to Login</h4>
                 </div>
-                <nav class="nav">
+                <nav class="nav" id="login-sucessfully">
                     <div class="child-1">
-                        <a href="/sign/pages js/login.html">LOGIN</a>
+                        <p>Admin Login</p>
                     </div>
-                    <div class="child-2">
-                        <a href="/sign/pages js/register.html">REGISTER</a>
-                    </div>
-                </nav>
-                <div class="loging-here">
-                    <input type="text" placeholder="First Name" id="firstName">
-                    <input type="text" placeholder="Last Name" id="lastName">
-                    <input type="text" placeholder="Email" id="email">
-                    <input type="text" placeholder="Create Password" id="password">
-                    <div class="gender">
-                        <p>Gender</p>
-                        <input type="radio" name="gender" id="Male" value="male">
-                        <label for="Male">Male</label>
-                        <input type="radio" name="gender" id="Female" value="female">
-                        <label for="Female">Female</label>
-                        <input type="radio" name="gender" id="other" value="other">
-                        <label for="other">Other</label>
-                    </div>
-                    <button id="register">REGISTER</button>
-                    <p>Already a Customer?<a href="/sign/pages js/login.html">Login</a></p>
-                    <p>Login as Admin?<a href="/sign/pages js/loginToAdmin.html">Click Here</a></p>
+                </nav>    
+                <div class="loging-here" id="show-here">
+                    <input type="text" placeholder="Enter Username" id="Username">
+                    <input type="text" placeholder="Enter Your Email" id="email">
+                    <input type="text" placeholder="Enter Password" id="password">
+                    <button id="login-btn">PROCEED</button>
+                    <p>New User?<a href="/sign/pages js/register.html">Create Account</a></p>
+                    <p>Already a Customer?<a href="/sign/pages js/login.html">Click Here</a></p>
                 </div>
             </div>
         </div>
@@ -231,6 +194,6 @@
         </div>
         
       </footer>
+    <script src="/sign/pages js/admin.js"></script>
 </body>
-<script src="/sign/pages js/register.js"></script>
 </html>
