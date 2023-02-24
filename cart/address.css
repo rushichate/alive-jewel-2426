@@ -10,7 +10,7 @@
     background-color: red;
     cursor: pointer;
   }
-  button{
+ .left>button{
     padding: 20px;
     font-size: 18px;
     font-weight: bold;
@@ -134,6 +134,136 @@
 }
 .contact p{
   font-size: 16px; 
+}
+
+/* main part */
+#address{
+  display:flex
+}
+#product{
+  border:2px solid red
+}
+#main{
+  display: flex;
+  border:2px solid red;
+  width:80%;
+  margin: auto;
+  justify-content: space-between;
+}
+#left{
+  width:68%;
+  border:2px solid red;
+ 
+}
+#address{
+  justify-content: space-between;
+  border:2px solid red;
+}
+#right{
+  width:28%;
+  /* border:2px solid red; */
+}
+#right>div:nth-child(3){
+  border:2px solid red;
+  padding:12px;
+  margin-top: 10px;
+}
+#right>div:nth-child(4){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(5){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(6){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(7){
+  /* border:2px solid red; */
+  padding:12px;
+  margin-top:10px
+ 
+}
+#right>div:nth-child(8){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(9){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(10){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(11){
+  border:2px solid red;
+  padding:12px;
+ 
+}
+#right>div:nth-child(1),#right>div:nth-child(12){
+  text-align: center;
+  padding:10px;
+  color:white;
+  background-color: #106f6f;
+  font-weight: bold;
+  border-radius: 2px;
+  
+}
+#right>div:nth-child(1){
+  margin-bottom: 15px;
+}
+#right>div:nth-child(2){
+  text-align: center;
+  padding:10px;
+  color:black;
+  background-color: #ffb951;
+  font-weight: bold;
+  border-radius: 2px;
+}
+#cartTotal{
+  border:2px solid red; margin-left: 200px;
+}
+#gst{
+  border:2px solid red; margin-left: 233px;
+}
+#sCharge{
+  border:2px solid red; margin-left: 150px;
+}
+#totalAmount{
+  border:2px solid red; margin-left: 173px
+}
+img{
+width: 100%;
+border-radius: 2px;
+
+}
+.card{
+ border:2px solid red;
+ width:250px
+
+}
+#imgdiv{
+  border:10px solid black;
+  width:250px;
+}
+#delbtn{
+  border:2px solid red;
+
+
+}
+#product{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
 }
  
   
