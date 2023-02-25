@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6e7e8;
+        }
+        .main_container{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            padding: 20px;
+            margin-top: 150px;
+            background-color: #feffff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .container>img{
+            width: 100px;
+        }
+        .container>p{
+            background-color: white;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .container>div{
+            margin: 20px ;
+            padding: 10px;
+            background-color: #ee5456;
+            border-radius: 5px;
+        }
+        .container>div>input{
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            padding: 0px 0px 0px 10px;
+        }
+        .container>div>p{
+            background-color: #ee5456;
+        }
+        .container>div>button{
+            padding: 8px 15px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <img src="/payment/upi.png">
+            <p>Select</p>
+            <div>
+                <p>PhonePe</p>
+                <input type="text" placeholder="PhonePe" id="PhonePe">
+                <button id="pp">continue</button>
+            </div>
+            <div>
+                <p>Google Pay</p>
+                <input type="text" placeholder="Google Pay" id="googlepay">
+                <button id="gp">continue</button>
+            </div>
+            <div>
+                <p>Your UPI ID</p>
+                <input type="text" placeholder="UPI" id="UPI">
+                <button id="upi">continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let PhonePe = document.getElementById("PhonePe");
+    let googlepay = document.getElementById("googlepay");
+    let UPI = document.getElementById("UPI");
+
+    let PhonePebtn = document.getElementById("pp");
+    let googlepaybtn = document.getElementById("gp");
+    let upibtn = document.getElementById("upi");
+
+    PhonePebtn.addEventListener("click", ()=>{
+        let PhonePeval = PhonePe.value;
+        if(PhonePeval != ""){
+            alert("Payment Successful");
+        }else{
+            alert("Invalid ID");
+        }
+        window.location.href = "/index.html";
+    })
+    
+    googlepaybtn.addEventListener("click", ()=>{
+        let googlepayval = googlepay.value;
+        if(googlepayval != ""){
+            alert("Payment Successful");
+        }else{
+            alert("Invalid ID");
+        }
+        window.location.href = "/index.html";
+    })
+    
+    upibtn.addEventListener("click", ()=>{
+        let upival = UPI.value;
+        if(upival != "" && upival.length == 10){
+            alert("Payment Successful");
+        }else{
+            alert("Invalid ID");
+        }
+        window.location.href = "/index.html";
+    })
+
+</script>
+</html>

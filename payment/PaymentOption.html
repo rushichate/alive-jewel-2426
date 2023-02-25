@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6e7e8;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .child{
+            margin: 10px;
+            padding: 20px 60px;
+            background-color: #ee5456;
+            border-radius: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .child:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+        }
+        .child>h1{
+            margin: 20px;
+            color: white;
+            background-color: #ee5456;
+        }
+        .child>p{
+            margin: 10px;
+            font-weight: 700;
+            background-color: #ee5456;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1 class="heading">Select Payment Method</h1>
+        </div>
+        <div class="container" id="container">
+            <div class="child" id="optionCard">
+                <h1>Card</h1>
+                <p>Click here to go with Card option</p>
+            </div>
+            <div class="child" id="optionUPI">
+                <h1>UPI</h1>
+                <p>Click here to go with UPI option</p>
+            </div>
+        </div>
+    </div>
+    <script src="/payment/option.js"></script>
+</body>
+</html>

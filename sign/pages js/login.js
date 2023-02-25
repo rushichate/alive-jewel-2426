@@ -34,8 +34,8 @@ function login(obj){
         let count = 0;
         data.forEach((e) => {
             if(e.email == obj.email && e.password == obj.password){
-                display();
                 alert("login SucessfSully");
+                display();
             }else{
                 count++;
             }
@@ -50,11 +50,6 @@ function login(obj){
 }
 
 function display(){
-        loginSucessfully.style.border = "none";
-        loginSucessfully.innerHTML = `<div class="child-1" style="background-color: black; color:white; margin: auto; border-radius: 10px;">
-                                        <p>Login Sucessfully</p>
-                                      </div>`;
-        clickHereMassageBtn.style.border = "none";                              
-        clickHereMassageBtn.innerHTML = `<button style="background-color: #ee5456; color:white;"><a href="./register.html" style="text-decoration: none;color: white;">Click here to go Home page</a></button>`  
-        card.style="background-color: #e6e7e8"                        
+    window.location.href = "/index.html";
 }
+
