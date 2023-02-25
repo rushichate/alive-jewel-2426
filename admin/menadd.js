@@ -40,7 +40,7 @@ fetch(`${url}/men`, {
    console.log(data);
    fetchsee();
 })
-window.location.href = "admin.html"
+
   })
 
 

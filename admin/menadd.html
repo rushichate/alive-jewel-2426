@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="/index.css">
+    <style>
+                *{
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+        .maincontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 750px;
+            background-color: #e6e7e8;
+        }
+        .mini{
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-card{
+            background-color: #ffffff;
+            padding: 40px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+        .header>h4{
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-family: sans-serif;
+            color: #6b6c6b;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            border: solid #6b6c6b 1px;
+            margin-bottom: 15px;
+            padding: 10px 55px;
+            background-color: #117a7a;
+            color: white;
+            justify-content: center;
+        }
+
+
+        .nav>a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .child-2>a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .loging-here{
+            background-color: #e6e7e8;
+            padding: 30px;
+            border: solid #6b6c6b 1px;
+        }
+
+        .loging-here>input{
+            display: block;
+            border-radius: 10px;
+            border: solid #c1c6c1 1px;
+            padding: 10px 94px 10px 10px;
+            margin: 25px 0px 25px 18px;
+        }
+
+        .loging-here>button{
+            display: block;
+            margin: auto;
+            padding: 11px 100px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: #117a7a;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .loging-here>p{
+            margin: 20px 40px 10px 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .loging-here>p>a{
+            color: #ee5456;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .loging-here h3 {
+            text-align: center;
+        }
+
+        .gender>input{
+            display: block;
+        }
+        .gender>label{
+            display: block;
+        }
+        .gender{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .gender>p{
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+   
+
+
+    <div class="maincontainer">
+        <div class="mini">
+            <div class="login-card">
+                <div class="header" id="register-sucessfully">
+                    <h4>ADD NEW PRODUCT</h4>
+                </div>
+                <nav class="nav">
+                        <h3>MEN</h3>
+                </nav>
+                <div class="loging-here">
+                    <input type="text" placeholder="Name of Product" id="name">
+                    <input type="text" placeholder="Brand Name" id="brand">
+                    <input type="text" placeholder="Image URL" id="urlLink">
+                    <input type="text" placeholder="Price" id="price">
+                    <input type="text" placeholder="Description" id="desc">
+                    <input type="text" placeholder="ID" id="ides">
+                    
+                    <button id="add">ADD</button>
+                    <a href="admin.html"><h3><b>Home</b></h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CARD -->
+
+   
+     
+</body>
+<script src="menadd.js"></script>
+</html>
