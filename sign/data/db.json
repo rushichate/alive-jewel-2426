@@ -111,6 +111,22 @@
       "password": "naman123",
       "gender": "male",
       "id": 13
+    },
+    {
+      "firstName": "rushikeshchate",
+      "lastName": "rushi",
+      "email": "rushi@123.com",
+      "password": "12345",
+      "gender": "male",
+      "id": 14
+    },
+    {
+      "firstName": "rushivikas",
+      "lastName": "chate",
+      "email": "123@123.com",
+      "password": "123",
+      "gender": "male",
+      "id": 15
     }
   ],
   "women": [
