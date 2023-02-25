@@ -1,3 +1,4 @@
+
 body {
     background-color: whitesmoke;
     
@@ -6,19 +7,24 @@ body {
     display: flex;
     padding-top: 30px;   
 }
+.name{
+    color: rgba(0, 0, 0, 0.803);
+    
+    
+}
 .name:hover{
     color: aquamarine;
 }
 
 .filter {
-    background-color: rgb(241, 18, 18);
-    width: 20%;
+    background-color: rgb(222, 42, 42);
+    width: 25%;
     margin-top: 20px;
     margin-right: 60px;
-    margin-left: 10px;
+    margin-left: 0px;
     padding-left: 30px;
     height: 530px;
-    border-radius: 13px;
+    border-radius: 12px;
 }
 #filtering{
 
@@ -33,6 +39,13 @@ body {
 #filtering>h2{
     width: 100%;
 }
+.srt{
+    font-size: 25px;
+    padding: 1px;
+    margin: 1px;
+    color: black;
+}
+
 
 
 
