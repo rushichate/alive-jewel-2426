@@ -1,7 +1,11 @@
-function gotoHome(){
-  window.location.assign('http://127.0.0.1:5501/index.html' )
+let cbtn=document.getElementById("cbtn")
+cbtn.addEventListener('click',function(){
+  
+  window.location.assign('/payment/payment.html' )
+})
+//   
    
-}
+// }
 let login = document.getElementById("login")
 login.addEventListener('click',function(){
   window.location.assign('http://127.0.0.1:5501/sign/pages%20js/login.html')

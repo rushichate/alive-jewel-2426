@@ -1,16 +1,30 @@
 let cartTotal=document.getElementById('cartTotal')
 let cartData=JSON.parse(localStorage.getItem("cart"))||[];
 let container=document.getElementById('product')
+let gst=document.getElementById("gst");
+let sCharge=document.getElementById("sCharge")
+ let totalamount=document.getElementById("totalAmount")
+ let save=document.getElementById("save100")
+ let grandTotal;
+//    save100.addEventListener('click',function(){
+//        grandTotal-100;
+//     })
+// gst.addEventListener("click",function(){
+//     alert('hello')
+// })
  display(cartData)
 
 function display(data){
     container.innerHTML=null
-   let total=data.length;
+  
    let sum=0;
    data.forEach(function(el){
-      sum+=el.price
+      sum+=el.price;
+
    });
-   
+   let gstText=18*(sum)/100;
+   gst.innerText=`₹${gstText}`
+   sCharge.textContent=`₹${100}`
     
     data.forEach((element,i) => {
         // console.log(e)
@@ -32,10 +46,21 @@ function display(data){
     desc.innerText=element.desc;
     let del=document.createElement("td")
     del.textContent="REMOVE"
+    // let addBtn = document.createElement('button');
+    // let minBtn = document.createElement('button');
+    // let quant=document.createElement("p")
+    // quant.textContent=`quantity =`
+    // addBtn.textContent = '+';
+    // minBtn.textContent = '-'
     let wishlist=document.createElement('td');
     wishlist.textContent="MOVE TO WISHLIST"
+    // save.addEventListener('click',function(){
+    //     alert("hello"
+    //     )
+    // })
     del.setAttribute('id',"delbtn")
 //     del.setAttribute('type','button')
+
     del.addEventListener('click',function(){
         
          
@@ -45,7 +70,10 @@ function display(data){
          alert('are you sure you want to remove product from the cart')   
          
     })
-              
+    let grandTotal=sum+gstText+100
+   //total saved in key total
+    localStorage.setItem('total',grandTotal)
+    totalamount.textContent=`₹${grandTotal}`
     imgdiv.append(image)
     imgdiv.setAttribute("id","imgdiv")
     card.append(price,offer,brandname,desc,del,wishlist)
@@ -53,4 +81,14 @@ function display(data){
     
     })
 }
+
+//payment page
+let placeOrder=document.getElementById("placeOrder")
+placeOrder.addEventListener('click',function(){
+    window.location.assign("http://127.0.0.1:5501/payment/payment.html")
+})
+let placeOrder2=document.querySelector(".placeOrder")
+placeOrder2.addEventListener('click',function(){
+    window.location.assign("http://127.0.0.1:5501/payment/payment.html")
+})
 
