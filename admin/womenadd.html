@@ -9,6 +9,8 @@
     <style>
                 *{
             margin: 0px;
+            text-decoration: none;
+            list-style: none;
         }
         .maincontainer{
             display: flex;
@@ -43,18 +45,16 @@
             justify-content: space-between;
             border: solid #6b6c6b 1px;
             margin-bottom: 15px;
-        }
-
-        .child-1{
-            padding: 10px 65px;
-        }
-        .child-2{
             padding: 10px 55px;
             background-color: #117a7a;
+            color: white;
+            justify-content: center;
         }
-        .child-1>a{
+
+
+        .nav>a{
             text-decoration: none;
-            color: black;
+            color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .child-2>a{
@@ -97,6 +97,9 @@
             color: #ee5456;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        .loging-here h3 {
+            text-align: center;
+        }
 
         .gender>input{
             display: block;
@@ -123,15 +126,10 @@
         <div class="mini">
             <div class="login-card">
                 <div class="header" id="register-sucessfully">
-                    <h4>ADD/ PRODUCT</h4>
+                    <h4>ADD NEW PRODUCT</h4>
                 </div>
                 <nav class="nav">
-                    <div class="child-1">
-                        <a href="/sign/pages js/login.html">ADD</a>
-                    </div>
-                    <div class="child-2">
-                        <a href="/sign/pages js/register.html">DELETE</a>
-                    </div>
+                        <h3>WOMEN</h3>
                 </nav>
                 <div class="loging-here">
                     <input type="text" placeholder="Name of Product" id="name">
@@ -140,16 +138,9 @@
                     <input type="text" placeholder="Price" id="price">
                     <input type="text" placeholder="Description" id="desc">
                     <input type="text" placeholder="ID" id="ides">
-                    <div class="gender">
-                        <p>Gender</p>
-                        <input type="radio" name="gender" id="Male" value="male">
-                        <label for="Male">Male</label>
-                        <input type="radio" name="gender" id="Female" value="female">
-                        <label for="Female">Female</label>
-                        <input type="radio" name="gender" id="other" value="other">
-                        <label for="other">Other</label>
-                    </div>
+                    
                     <button id="add">ADD</button>
+                    <a href="admin.html"><h3><b>Home</b></h3></a>
                 </div>
             </div>
         </div>
@@ -159,5 +150,5 @@
    
      
 </body>
-<script src="add.js"></script>
+<script src="womenadd.js"></script>
 </html>
