@@ -141,45 +141,47 @@
   display:flex
 }
 #product{
-  border:2px solid red
+  /* border:2px solid red */
 }
 #main{
   display: flex;
-  border:2px solid red;
+  /* border:2px solid red; */
   width:80%;
   margin: auto;
   justify-content: space-between;
 }
 #left{
   width:68%;
-  border:2px solid red;
+  /* border:2px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
  
 }
 #address{
   justify-content: space-between;
-  border:2px solid red;
+  /* border:2px solid red; */
 }
 #right{
   width:28%;
   /* border:2px solid red; */
 }
 #right>div:nth-child(3){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
   margin-top: 10px;
 }
 #right>div:nth-child(4){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
 #right>div:nth-child(5){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
 #right>div:nth-child(6){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
@@ -190,22 +192,22 @@
  
 }
 #right>div:nth-child(8){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
 #right>div:nth-child(9){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
 #right>div:nth-child(10){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
 #right>div:nth-child(11){
-  border:2px solid red;
+  /* border:2px solid red; */
   padding:12px;
  
 }
@@ -230,16 +232,20 @@
   border-radius: 2px;
 }
 #cartTotal{
-  border:2px solid red; margin-left: 200px;
+  /* border:2px solid red;  */
+  margin-left: 100px;
 }
 #gst{
-  border:2px solid red; margin-left: 233px;
+  /* border:2px solid red; */
+   margin-left: 132px;
 }
 #sCharge{
-  border:2px solid red; margin-left: 150px;
+  /* border:2px solid red;  */
+  margin-left: 46px;
 }
 #totalAmount{
-  border:2px solid red; margin-left: 173px
+  /* border:2px solid red;  */
+  margin-left:70px
 }
 img{
 width: 100%;
@@ -247,23 +253,40 @@ border-radius: 2px;
 
 }
 .card{
- border:2px solid red;
- width:250px
+ /* border:2px solid red; */
+ width:250px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
 
 }
 #imgdiv{
   border:10px solid black;
   width:250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding:10px
 }
 #delbtn{
-  border:2px solid red;
+  /* border:2px solid red; */
 
 
+}
+.card>h3{
+  /* border:2px solid blue; */
+  text-align: right;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
 }
 #product{
   display:grid;
   grid-template-columns: repeat(2,1fr);
   gap: 50px;
+}
+.card>p{
+  border:2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
  
   
