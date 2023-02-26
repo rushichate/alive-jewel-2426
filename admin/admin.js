@@ -20,18 +20,39 @@ themeToggler.addEventListener('click', () =>{
 })
 
 
-Orders.forEach(order =>{
+
+fetch(`http://localhost:3000/adminData`)
+.then(res => res.json())
+.then((data) =>{
+  let total = 0 ;
+  let price = 0;
+
+data.forEach((order) =>{
+     total += order.price
+     let income = ((order.price)*25)/100;
+      price += income;
     const tr = document.createElement('tr');
     const trContent =`
                      
-                        <td>${order.productName}</td>
-                        <td>${order.productNumber}</td>
-                        <td>${order.paymentStatus}</td>
-                        <td class="${order.shipping === 'Declined' ? 'danger' : 
-                        order.shipping === 'pending' ? 'warning' : 'primary'}">Pending</td>
-                        <td class="primary">Details</td>
-                    
+                        <td>${order.name}</td>
+                        <td>${order.id}</td>
+                        <td>${order.brandName}</td>
+                        <td>${order.price}</td>
+                        <td>DONE</td>
                     `;
                     tr.innerHTML = trContent;
                     document.querySelector('table tbody').appendChild(tr);
 }) 
+let dealsData = document.getElementById("total-deals");
+dealsData.innerText = data.length ;
+let saleData = document.getElementById("total-sale");
+saleData.innerText = total;
+let incomeData = document.getElementById("income");
+incomeData.innerText = price;
+})
+
+let logOut = document.getElementById("logout");
+logOut.addEventListener("click", () =>{
+    window.location.href = "http://127.0.0.1:5501/index.html"
+})
+

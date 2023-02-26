@@ -1,5 +1,5 @@
 
-let url = "https://test1-h9kd.onrender.com";
+let url = "http://localhost:3000";
 // {
 //     "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
 //     "name": "Foxter",
@@ -35,12 +35,6 @@ fetch(`${url}/men`, {
     'Content-type' : 'application/json'
     }
 })
-.then(res => res.json())
-.then(data =>{
-   console.log(data);
-   fetchsee();
-})
-
   })
 
 
