@@ -609,14 +609,6 @@
       "desc": "Women Fit and Flare Light Blue Dress",
       "price": 849,
       "id": "60"
-    },
-    {
-      "image": "dfg",
-      "name": "dfgf",
-      "brandName": "dfgf",
-      "desc": "dfg",
-      "price": "dfgf",
-      "id": "wGFd3z5"
     }
   ],
   "men": [
@@ -1099,23 +1091,8 @@
       "desc": "Men Jogger Fit Mid Rise Grey Jeans",
       "price": 849,
       "id": "60"
-    },
-    {
-      "image": "123456",
-      "name": "rushi",
-      "brandName": "chate",
-      "desc": "none",
-      "price": "123",
-      "id": "DK-qUmM"
-    },
-    {
-      "image": "df",
-      "name": "df",
-      "brandName": "dfd",
-      "desc": "df",
-      "price": "df",
-      "id": "z7SzsjM"
     }
+    
   ],
   "adminData": [
     
