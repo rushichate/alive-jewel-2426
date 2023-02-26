@@ -16,7 +16,7 @@ let sCharge=document.getElementById("sCharge")
 
 function display(data){
     container.innerHTML=null
-  
+//   console.log(data)
    let sum=0;
    data.forEach(function(el){
       sum+=el.price;
@@ -54,6 +54,7 @@ function display(data){
     // minBtn.textContent = '-'
     let wishlist=document.createElement('td');
     wishlist.textContent="MOVE TO WISHLIST"
+    wishlist.style.color="orange"
     // save.addEventListener('click',function(){
     //     alert("hello"
     //     )
@@ -83,12 +84,36 @@ function display(data){
 }
 
 //payment page
+//bottom placeholder btn
 let placeOrder=document.getElementById("placeOrder")
-placeOrder.addEventListener('click',function(){
-    window.location.assign("http://127.0.0.1:5501/payment/payment.html")
+placeOrder.addEventListener('click',function(e){
+     e.preventDefault()
+     cartData.forEach((element) =>{
+        fetch("http://localhost:3000/adminData",{
+            method:"POST",
+            body:JSON.stringify(element),
+            headers:{"Content-type":"application/json"}
+         })
+     })
+   
+      window.location.assign("http://127.0.0.1:5501/payment/payment.html")
 })
-let placeOrder2=document.querySelector(".placeOrder")
-placeOrder2.addEventListener('click',function(){
-    window.location.assign("http://127.0.0.1:5501/payment/payment.html")
-})
+
+// let placeOrder2=document.querySelector(".placeOrder")
+// placeOrder2.addEventListener('click',function(e){
+//     e.preventDefault()
+//      cartData.forEach((element) =>{
+//         fetch("http://localhost:3000/adminData",{
+//             method:"POST",
+//             body:JSON.stringify(element),
+//             headers:{"Content-type":"application/json"}
+//          })
+//      })
+//     //  window.location.assign("http://127.0.0.1:5501/payment/payment.html")
+// })
+
+
+
+
+
 

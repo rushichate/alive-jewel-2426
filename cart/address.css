@@ -211,13 +211,14 @@
   padding:12px;
  
 }
-#right>div:nth-child(1),#right>div:nth-child(12){
+#right>div:last-child{
   text-align: center;
   padding:10px;
   color:white;
   background-color: #106f6f;
   font-weight: bold;
   border-radius: 2px;
+  cursor: pointer;
   
 }
 #right>div:nth-child(1){
@@ -268,14 +269,17 @@ border-radius: 2px;
   padding:10px
 }
 #delbtn{
-  /* border:2px solid red; */
+  /* background-color: red; */
+  size: 10px;
+  color:red
+
 
 
 }
 .card>h3{
   /* border:2px solid blue; */
   text-align: right;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
  
 }
 #product{
@@ -285,8 +289,53 @@ border-radius: 2px;
 }
 .card>p{
   border:2px solid white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */ 
+}
+/* .card>td:nth-child(1){
+  border:2px solid black
+} */
+
+/* media querry for small sizes */
+@media only screen and (max-width: 1050px){
+  .card{
+   /* border:2px solid red;  */
+     width:150px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  } 
+  #imgdiv{
+    border:10px solid black;
+    width:150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:10px
+  }
+  /* #right{
+    width:100px;
+    border:2px solid red;
+  } */
+
+  
+
+}
+@media only screen and (max-width: 730px){
+   .card{
+   border:2px solid black;  
+     width:80px; 
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }  
+  #imgdiv{
+    /* border:10px solid red; */
+    width:90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:10px;
+  }
+
+  
+
 }
  
   

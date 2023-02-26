@@ -1,7 +1,7 @@
 let cbtn=document.getElementById("cbtn")
 cbtn.addEventListener('click',function(){
   
-  window.location.assign('/payment/payment.html' )
+  window.location.assign('/product/mensproduct.html' )
 })
 //   
    

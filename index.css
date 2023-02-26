@@ -63,10 +63,6 @@ button:active{
   padding-left: 450px;
   
 }
-.media{
-  display: none;
-}
-
 .right{
   display: flex;
   position: absolute;
@@ -80,6 +76,10 @@ button:active{
 span{
   padding-left: 20px;
   cursor: pointer;
+}
+
+.media{
+  display: none;
 }
 
   .bg-img {
@@ -123,7 +123,7 @@ span{
   }
   
   .topnav i:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color: black;
   }
 
@@ -287,10 +287,12 @@ hr{
  /* .collection p ::before{
  /* content: "|";  * */
 
+
+ /*===> search icon<===== */
 .wrapper {
 position: absolute;
 top: 13%;
-left: 72%;
+left: 77%;
 /* right: 2px; */
 transform: translate(-50%, -50%);
 }
@@ -361,44 +363,32 @@ padding-left: 10px;
   width:5rem;
 }
 
+.copy{
+  /* background-color: #232f3e; */
+  /* height: 90px; */
+  padding: 40px;
+  text-align: center;
+}
+.copy span{
+  color:#525964;
+  font-size: 16px;
+}
 
-  /* large screen */
 
-  @media only screen and (min-width: 768px) {
+             /*====> large screen<===== */
+
+  @media only screen and (max-width: 1200px) {
 
     .wrapper{
       display: none;
     }
-    .media{
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-    }
-    .media div{
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-    .media a{
-      color: black;
-    }
-    .bg-img .topnav{
-      min-height: 500px;
-      position: absolute;
-      top:65px;
-      cursor: pointer;
-      z-index: 3;
-      width: auto;
-      right:8px;
-    }
-    .right span:first-child,
-    .right span:nth-child(2){
+    .right span:first-child{
       display:none;
     }
     
   }
 
-    /* medium screen */
+          /*=====> medium screen<====== */
 
   @media screen and (max-width: 950px) {
     header{
@@ -426,20 +416,46 @@ padding-left: 10px;
     }
     .logo{
       position: absolute;
-      left: 50%;
+      left: 40%;
       top:0px;
     }
     .wrapper{
       display: none;
     }
+    .media{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .media div{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .media a{
+      color: black;
+    }
+    .bg-img .topnav{
+      min-height: 500px;
+      position: absolute;
+      top:65px;
+      cursor: pointer;
+      z-index: 3;
+      width: auto;
+      right:8px;
+    } 
+    .right span:first-child,
+    .right span:nth-child(2){
+      display:none;
+    }
 
   }
 
  
-          /* small screen */
+          /* =====>small screen<======= */
 
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 550px) {
     .logo{
       display: none;
     }

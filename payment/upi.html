@@ -57,6 +57,8 @@
     </style>
 </head>
 <body>
+  
+    <!-- Card -->
     <div class="main_container">
         <div class="container">
             <img src="/payment/upi.png">
@@ -78,7 +80,10 @@
             </div>
         </div>
     </div>
+    <!-- Card -->
+    
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
     let PhonePe = document.getElementById("PhonePe");
     let googlepay = document.getElementById("googlepay");
@@ -92,30 +97,30 @@
         let PhonePeval = PhonePe.value;
         if(PhonePeval != ""){
             alert("Payment Successful");
+            window.location.href = "/index.html";
         }else{
             alert("Invalid ID");
         }
-        window.location.href = "/index.html";
     })
     
     googlepaybtn.addEventListener("click", ()=>{
         let googlepayval = googlepay.value;
         if(googlepayval != ""){
             alert("Payment Successful");
+            window.location.href = "/index.html";
         }else{
             alert("Invalid ID");
         }
-        window.location.href = "/index.html";
     })
     
     upibtn.addEventListener("click", ()=>{
         let upival = UPI.value;
         if(upival != "" && upival.length == 10){
-            alert("Payment Successful");
+          alert("Payment Successful");
+          window.location.href = "/index.html";
         }else{
             alert("Invalid ID");
         }
-        window.location.href = "/index.html";
     })
 
 </script>
