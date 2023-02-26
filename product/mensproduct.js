@@ -10,7 +10,15 @@ let calvinbtn=document.getElementById("calvin")
 let dieselbtn=document.getElementById("diesel")
 let turtlebtn=document.getElementById("turtle")
 let raymondbtn=document.getElementById("raymond")
-let adidasbtn=document.getElementById("adidas")
+let adidasbtn=document.getElementById("adidas");
+
+document.getElementById("brandsearch").addEventListener("input", (e) => {
+  let input = e.target.value;
+  let newData = fetcheddata.filter((el, index) => {
+    return el.brandName.toLowerCase().includes(input);
+  });
+  displayproducts(newData);
+});
 
 calvinbtn.addEventListener("click",()=>{
     let filtered=fetcheddata.filter((element)=>{
@@ -96,7 +104,7 @@ pricedsc.addEventListener("click",()=>{
    
 
 
-fetch(`https://test1-h9kd.onrender.com/men`)
+fetch(`http://localhost:3000/men`)
 .then((responseobj)=>{
     return responseobj.json();
 })

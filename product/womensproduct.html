@@ -6,37 +6,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="womesproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navcss.css">
 </head>
 <body>
-    <!-- Filter and Sort -->
-    <div id="filter-div">
-        <div class="filter">
-          <div id="filtering">
-              <h2>
-                Filter
-              </h2>
-              <h4>Sort By Name</h4>
-                 <a href="#"> <ul id="AtoZ">A to Z</ul> </a>
-                  <a href="#"><ul id="ZtoA">Z to A</ul></a>
-              
-              <h4>Sort By Price</h4>
-                  <a href="#"><ul id="LtH">Low To High</ul></a>
-                  <a href="#"><ul id="HtL">High To Low</ul></a>
-              
-              <h4>Filter By Brand</h4>
-                  <a href="#"><ul id="calvin">Calvin Klein</ul></a>
-                  <a href="#"><ul id="diesel">Diesel</ul></a>
-                  <a href="#"><ul id="turtle">Turtle</ul></a>
-                  <a href="#"><ul id="raymond">Raymond</ul></a>
-                  <a href="#"><ul id="adidas">Adidas</ul></a>
-  
+    <header class="flex">
+        <div class="logo"><img src="image/the owned store.png" alt="" width="100px"></div>
+          <div class="left">
+              <a href="womensproduct.html"><button class="women">WOMEN</button></a>
+              <a href="mensproduct.html"><button class="men">MEN</button></a>
+              <button class="kids">KIDS</button>
           </div>
-        </div>
+          <div class="right">
+              <a href=""><span>TRACK OREDER</span></a>
+              <a href=""><span></span> CONTACT US</span></a>
+              <a href=""><span></span> <i class="fa-thin fa-mobile"></i>DOWNLOAD APP</span></a>
+          </div>
+      </header>
+      <div class="container">
+          <div class="middle flex">
+              <div class="box1">
+                  <h4>TOP WEAR</h4>
+                  <div class="li1">
+                      <div>
+                          <a href="product.html">
+                          <li>Tops</li>
+                          <li>Shirts</li>
+                          <li>Co-ord Set</li>
+                          <li>Women's T-Shirts</li>
+                          <li>Boyfriend T-Shirts</li>
+                          <li>Sweatshirts & Sweaters</li>
+                          <li>Hoodies & Jackets</li>
+                          <li>Dresses</li>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="box2">
+                  <h4>BOTTOMWEAR</h4>
+                  <div class="li2">
+                      <div>
+                          <a href="product.html">
+                          <li>Joggers</li>
+                          <li>Freestyle Leggings</li>
+                          <li>Innerwear</li>
+                          <li>Shorts</li>
+                          <li>All Day Pants</li>
+                          <li>Pajamas</li>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="box3">
+                  <h4>COLLECTIONS</h4>
+                  <div class="li3">
+                      <div>
+                          <li>NewArrivals</li>
+                          <li>BestSellers</li>
+                          <li>Activewear</li>
+                          <li>HottestDeals</li>
+                      </div>
+                  </div>
+              </div>
+              <div class="box4">
+                  <h4>ACCESSORIES</h4>
+                  <div class="li4">
+                      <div>
+                          <li>Footwear</li>
+                          <li>Backpacks</li>
+                          <li>Perfumes</li>
+                          <li>Socks</li>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="box5">
+                  <h4><span>MEMBERSHIP</span></h4>
+              </div>
+          </div>
+          <div class="topnav">
+              <!-- <i style="position: absolute; right:278px;" class="fas fa-search fa-lg"></i> -->
+              <!-- <i class="fa fa-search fa-lg" aria-hidden="true"></i> -->
+              <div class="wrapper">
+                  <div class="search-box">
+                     <input type="text" placeholder="What are you looking for?" class="input" id="brandsearch">
+                     <div class="btn">
+                       <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                     </div>
+                  </div>
+                </div>
+              <i class="fa-solid fa-user fa-xl"></i>
+              <i class="fa-regular fa-heart fa-xl"></i>
+             <a href="/cart/address.html"><i class="fa fa-shopping-bag fa-lg"></i></a>
+            </div>
+      </div>
+      
+      <div class="logo"><img src="image/The Owned Store (1).png" alt="" width="120px"></div>
+  
+    <!-- put your section here --><div id="filter-div">
+        <div class="filter">
+            <!-- <div id="filtering"> -->
+                
+                <p class="srt">SORT BY NAME</p>
+                <hr class="mainname">
+                   <a href="#"> <p id="AtoZ"class="name" >ASENDING</p> </a>
+                    <a href="#"><p id="ZtoA" class="name">DESENDING</p></a>
+                
+                <p class="srt">SORT BY PRICE</p>
+                <hr class="mainname">
+                    <a href="#"><P id="LtH" class="name">LOW TO HIGH </P></a>
+                    <a href="#"><P id="HtL" class="name">HIGH TO LOW </P></a>
+                
+                <p class="srt">FILTER BY BRAND</p> 
+                <hr class="mainname">
+                    <a href="#"><P id="calvin" class="name">CALVEIN KLEIN </P></a>
+                    <a href="#"><P id="diesel" class="name">DIESEL</P></a>
+                    <a href="#"><P id="turtle" class="name">TURTLE </P></a>
+                    <a href="#"><P id="raymond" class="name">RAYMOND</P></a>
+                    <a href="#"><P id="adidas" class="name">ADIDAS </P></a>
+    
+            <!-- </div> -->
+          </div>
       <div id="product-container">
           <!--here append all products-->
       </div>
       </div>
+      <footer>
+        <div class="detail">
+            <div class="table">
+                <div>
+                 <div class="t-head"><h3>NEEDS HELP</h3></div>
+                 <ul>
+                    <li>Contact Us</li>
+                    <li>Track Order</li>
+                    <li>Return & Refund</li>
+                    <li>FAQs</li>
+                    <li>My Account</li>
+                 </ul>
+                </div>
+            
+            
+                <div>
+                 <div class="t-head"><h3>COMPANY</h3></div>
+                 <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Stores Near Me</li>
+                    <li>From The Soul</li>
+                    <li>Souled Army</li>
+                 </ul>
+                </div>
+            
+            
+                <div>
+                 <div class="t-head"><h3>MORE INFO</h3></div>
+                 <ul>
+                    <li>T&C</li>
+                    <li>Privacy Policy</li>
+                    <li>Sitemap</li>
+                 </ul>
+                </div>
+
+                <div>
+                    <div class=""><h3>COD Available</h3></div>
+                    <div class=""><h3>30 Days Easy Returns</h3></div>
+                </div>
+                
+            </div>
+            <p class="store"> <i class="fa-thin fa-mobile"></i></i>EXPERIENCE THE SOULED STORE APP</p>
+            <div class="app">
+                <a href="https://play.google.com/store/apps/details?id=com.thesouledstore"><div><img src="https://tss-static-images.gumlet.io/icons/play-store.png" alt="" width="120px"></div></a>
+                <a href="https://apps.apple.com/us/app/thesouledstore/id1493897434?ls=1"><div><img src="https://tss-static-images.gumlet.io/icons/app-store.png" alt="" width="120px"></div></a>
+            </div>
+
+            <div class="contact">
+                <p>Follow Us:</p>
+                <a href="https://www.facebook.com/souledstore/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/TheSouledStore/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://www.snapchat.com/add/thesouledstore"><i class="fa-brands fa-square-snapchat fa-2x"></i></a>
+                <a href="https://twitter.com/TheSouledStore"><i class="fa-brands fa-square-twitter fa-2x"></i></a>
+            </div>
+
+            <div>
+                <div class="links">
+                  <div>
+                    <p class="fs-5"> +</p>
+                  </div>
+                  <div class="d-flex ">
+                     <p>NAVIGATIONS LINKS</p> 
+                  </div>
+                  
+              </div> 
+              </div>
+              <div class="links we">
+                  <div>
+                   <p class="fs-5"> +</p>  
+                  </div>
+                  <div class="d-flex">
+                    <p>WHO WE ARE</p> 
+                  </div>
+                  </div>
+              
+
+              <div class="payment">
+              <div class="payment1">
+                <p>100% Secure Payment:
+                </p>
+                <div><img src="https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png" alt="" width="50px"></div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/2560px-Google_Pay_Logo.svg.png" alt="" width="50px"></div>
+                <div><img src="https://i2.wp.com/zeevector.com/wp-content/uploads/Amazon-Pay-Logo-Colour.png?fit=1087%2C349&ssl=1" alt="" width="50px"></div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="" width="50px"></div>
+               <div><img src="https://www.logo.wine/a/logo/MobiKwik/MobiKwik-Logo.wine.svg" alt="" width="50px"></div> 
+                <div><img src="https://download.logo.wine/logo/Paytm/Paytm-Logo.wine.png" alt="" width="50px"></div>
+                <div><img src="https://w7.pngwing.com/pngs/407/1008/png-transparent-logo-brand-trademark-cash-on-delivery-blue-text-trademark.png" alt="" width="50px"></div>
+              </div>
+
+              <div class="payment1 line">
+                <p>Shipping Partners:</p>
+                <div><img src="https://1000logos.net/wp-content/uploads/2021/04/Fedex-logo.png" alt="" width="50px"></div>
+                <div><img src="https://www.pngitem.com/pimgs/m/65-653282_dtdc-courier-logo-png-transparent-png.png" alt="" width="50px"></div>
+                <div><img src="https://qph.cf2.quoracdn.net/main-qimg-878567f5a3e316eec15e37314bdedda5.webp" alt="" width="50px"></div>
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ecom-express_logo.png" alt="" width="50px"></div>
+                <div><img src="https://static.startuptalky.com/2020/10/Xpressbees_startuptalky.jpg" alt="" width="50px"></div>
+              </div>
+            </div>
+
+            <div class="popular"><p>POPULAR SEARCHES</p>
+                <hr class="line1">
+            </div>
+
+            <div class="collection">
+                <p>Tops <hr> Shirts <hr> Co-ordSets <hr> Women'sT-Shirts <hr> BoyfriendT-shirts <hr> Sweatshirts <hr> Sweaters <hr> Hoodies <hr> Jackets <hr> Dresses <hr> Joggers <hr> Freestyle <hr> Leggings <hr> Innerwear <hr> Shorts <hr> AllDayPants <hr> Pajamas <hr> NewArrivals
+            </div>
+            <div class="collection1">
+              <hr> BestSellers  <hr> Activewear <hr> HottestDeals <hr> Footwear <hr> Backpacks <hr> Perfumes <hr> Socks <hr> </p>
+             </div>
+
+        </div>
+        
+      </footer>
   
 </body>
 <script src="/product/womensproduct.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    
+$(".btn").click(function(){
+    $(".input").toggleClass("active").focus;
+    $(this).toggleClass("animate");
+    $(".input").val("");
+  });
+
+//   $( document ).ready(function() {
+//   $( ".men" ).click(function() {
+//     $( ".men" ).css('background', 'white');
+//   });
+//   $( ".kids" ).click(function() {
+//     $( ".kids" ).css('background', 'white');
+//   });
+//   $( ".women" ).click(function() {
+//     $( ".women" ).addClass('button-clicked', 'white');
+//   });
+// });
+  </script>
 </html>

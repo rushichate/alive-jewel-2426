@@ -9,11 +9,13 @@ body {
 }
 .name{
     color: rgba(0, 0, 0, 0.803);
-    
+    margin: 7px;
+    font-size: 20px;
     
 }
-.name:hover{
+#filtering a{
     color: aquamarine;
+   
 }
 
 .filter {
@@ -32,19 +34,48 @@ body {
     border: 2px;
     
 }
-#filtering a {
+.name:hover{
+    color: azure;
+}
+.filter a {
     text-decoration: none;
+    
+   
 }
 
 #filtering>h2{
     width: 100%;
 }
+.mainname{
+    width: 380px;
+    height: 0px;
+    color: black;
+   margin: 5px;
+}
 .srt{
-    font-size: 25px;
+    font-size: 32px;
     padding: 1px;
-    margin: 1px;
+    margin: 7px;
     color: black;
 }
+/* #filter-div{
+width: 100%;
+display: flex;
+}
+.filter{
+width: 25%;
+background-color: red;
+height: 450px;
+border-radius: 13px;
+margin: 10px 10px 10px 10px;
+padding-left: 25px;
+}
+.filter a{
+    display: block;
+}
+.filter a:hover{
+    color: aquamarine;
+} */
 
 
 
@@ -75,30 +106,32 @@ body {
 }
 #product-container > div  p{ 
     padding-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 7px;
 
 }
 #product-container > div h3{
     padding-left: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 7px;
 }
 #product-container > div h4{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: teal;
+    margin-top: 1px;
+    margin-bottom: 7px;
+    color: rgb(211, 28, 4);
     padding-left: 10px;
     font-family: monospace;
-    font-size: 18px; 
+    font-size: 20px; 
 }
 #product-container > div button{
     margin-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
 #product-container > div button {
   appearance: none;
-  background-color: rgb(66, 156, 66);
-  border: 2px solid rgb(66, 156, 66);
+  background-color: rgb(215, 36, 16);
+  border: 2px solid rgb(215, 156, 66);
   border-radius: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -116,7 +149,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 50%;
+  
   will-change: transform;
 }
 
@@ -133,8 +166,28 @@ body {
   box-shadow: none;
   transform: translateY(0);
 }
-
-
+@media  screen and (min-width:0px) and (max-width:600px){
+    #product-container{
+        width:100%;
+        margin:auto;
+        display:grid;
+        
+        grid-template-columns: repeat(1,1fr);
+        gap:15px;
+    }
+    
+}
+@media  screen and (min-width:601px) and (max-width:1000px){
+    #product-container{
+        width:100%;
+        margin:auto;
+        display:grid;
+        
+        grid-template-columns: repeat(2,1fr);
+        gap:15px;
+    }
+    
+}
 
 
 
