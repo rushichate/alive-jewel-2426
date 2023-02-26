@@ -111,6 +111,46 @@
       "password": "naman123",
       "gender": "male",
       "id": 13
+    },
+    {
+      "firstName": "rushi",
+      "lastName": "chate",
+      "email": "op@op.com",
+      "password": "123",
+      "gender": "male",
+      "id": 14
+    },
+    {
+      "firstName": "oooo",
+      "lastName": "ooooo",
+      "email": "o@o.com",
+      "password": "123",
+      "gender": "male",
+      "id": 15
+    },
+    {
+      "firstName": "ppp",
+      "lastName": "ppp",
+      "email": "p@p.com",
+      "password": "123",
+      "gender": "male",
+      "id": 16
+    },
+    {
+      "firstName": "12345",
+      "lastName": "12345",
+      "email": "q@q.com",
+      "password": "12345",
+      "gender": "male",
+      "id": 17
+    },
+    {
+      "firstName": "naman",
+      "lastName": "shrivastav",
+      "email": "naman@gmail.com",
+      "password": "naman121",
+      "gender": "male",
+      "id": 18
     }
   ],
   "women": [
@@ -593,6 +633,22 @@
       "desc": "Women Fit and Flare Light Blue Dress",
       "price": 849,
       "id": "60"
+    },
+    {
+      "image": "rgr",
+      "name": "fgvf",
+      "brandName": "rfgrg",
+      "desc": "rg",
+      "price": "rg",
+      "id": "F5OmA5a"
+    },
+    {
+      "image": "fvf",
+      "name": "fvff",
+      "brandName": "vfbv",
+      "desc": "rfvgt",
+      "price": "fvg",
+      "id": "a1bFtDL"
     }
   ],
   "men": [
@@ -1075,9 +1131,32 @@
       "desc": "Men Jogger Fit Mid Rise Grey Jeans",
       "price": 849,
       "id": "60"
+    },
+    {
+      "image": "sdref",
+      "name": "hdiid",
+      "brandName": "ddfrf",
+      "desc": "edfr",
+      "price": "edfrf",
+      "id": "CSiOBLg"
     }
   ],
   "adminData": [
-   
+    {
+      "image": "https://rukminim1.flixcart.com/image/832/832/kyxb9u80/t-shirt/k/n/y/xl-t67-nbwh-eyebogler-original-imagbfyc3rkzaj2y.jpeg?q=70",
+      "name": "EyeBogler",
+      "brandName": "Adidas",
+      "desc": "Men Striped Round Neck Blue T-Shirt",
+      "price": 299,
+      "id": "2"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/p/n/1/l-jc22-rn-fs-black-olv-never-jump-cuts-original-imaghcczhrhhfvud.jpeg?q=70",
+      "name": "Jump Cuts",
+      "brandName": "Adidas",
+      "desc": "Men Printed Round Neck Green, Black T-Shirt",
+      "price": 294,
+      "id": "3"
+    }
   ]
 }

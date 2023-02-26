@@ -87,7 +87,7 @@ function display(data){
 //bottom placeholder btn
 let placeOrder=document.getElementById("placeOrder")
 placeOrder.addEventListener('click',function(e){
-     e.preventDefault()
+     e.preventDefault();
      cartData.forEach((element) =>{
         fetch("http://localhost:3000/adminData",{
             method:"POST",
@@ -96,9 +96,9 @@ placeOrder.addEventListener('click',function(e){
          })
      })
    
-      window.location.assign("http://127.0.0.1:5501/payment/payment.html")
+     window.location.href = "/payment/PaymentOption.html";
 })
-
+console.log(cartData);
 // let placeOrder2=document.querySelector(".placeOrder")
 // placeOrder2.addEventListener('click',function(e){
 //     e.preventDefault()

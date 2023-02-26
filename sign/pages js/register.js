@@ -39,9 +39,7 @@ registerBtn.addEventListener("click", (e)=>{
     registerUser(obj);
 })
 
-function registerSucessfully(){
-    alert("User Registered Sucessfully");
-}
+
 
 function Send(obj){
     fetch(`http://localhost:3000/users`,{
@@ -78,7 +76,9 @@ function registerUser(obj){
     }
     else{
         Send(obj);
-        registerSucessfully();
+        window.location.assign("http://127.0.0.1:5501/sign/pages%20js/login.html");
+        alert("User Registered Sucessfully");
+   
     }
 }
 
