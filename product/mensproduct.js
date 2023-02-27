@@ -104,7 +104,7 @@ pricedsc.addEventListener("click",()=>{
    
 
 
-fetch(`http://localhost:3000/men`)
+fetch(`https://test1-h9kd.onrender.com/men`)
 .then((responseobj)=>{
     return responseobj.json();
 })

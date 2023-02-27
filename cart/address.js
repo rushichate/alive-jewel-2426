@@ -87,18 +87,26 @@ function display(data){
 //bottom placeholder btn
 let placeOrder=document.getElementById("placeOrder")
 placeOrder.addEventListener('click',function(e){
-     e.preventDefault();
-     cartData.forEach((element) =>{
-        fetch("http://localhost:3000/adminData",{
+    e.preventDefault();
+     Send(cartData);
+    //  placeOrder.addEventListener('click',function(e){
+    //     e.preventDefault();
+    setTimeout(() => {
+        window.location.href = "/payment/PaymentOption.html";
+    }, 2000);
+     
+    //  })
+})
+ function Send(data){
+    data.forEach((element) =>{
+        fetch("https://test1-h9kd.onrender.com/adminData",{
             method:"POST",
             body:JSON.stringify(element),
             headers:{"Content-type":"application/json"}
          })
      })
-   
-     window.location.href = "/payment/PaymentOption.html";
-})
-console.log(cartData);
+ }
+
 // let placeOrder2=document.querySelector(".placeOrder")
 // placeOrder2.addEventListener('click',function(e){
 //     e.preventDefault()

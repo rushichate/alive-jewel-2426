@@ -42,7 +42,7 @@ registerBtn.addEventListener("click", (e)=>{
 
 
 function Send(obj){
-    fetch(`http://localhost:3000/users`,{
+    fetch(`https://test1-h9kd.onrender.com/users`,{
         method : "POST",
         body : JSON.stringify(obj),
         headers : {
@@ -76,7 +76,7 @@ function registerUser(obj){
     }
     else{
         Send(obj);
-        window.location.assign("http://127.0.0.1:5501/sign/pages%20js/login.html");
+        window.location.assign("/sign/pages js/login.html");
         alert("User Registered Sucessfully");
    
     }

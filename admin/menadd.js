@@ -1,5 +1,5 @@
 
-let url = "http://localhost:3000";
+let url = "https://test1-h9kd.onrender.com";
 // {
 //     "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
 //     "name": "Foxter",

@@ -35,7 +35,7 @@ Login_Btn.addEventListener("click", ()=>{
 
 function login(obj){
     console.log(obj);
-    fetch(`http://localhost:3000/admins`)
+    fetch(`https://test1-h9kd.onrender.com/admins`)
     .then((res)=> res.json())
     .then((data)=>{
         data.forEach((e) => {

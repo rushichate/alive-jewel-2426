@@ -28,7 +28,7 @@ Login_Btn.addEventListener("click", ()=>{
 })
 
 function login(obj){
-    fetch(`http://localhost:3000/users`)
+    fetch(`https://test1-h9kd.onrender.com/users`)
     .then((res)=> res.json())
     .then((data)=>{
         let count = 0;
