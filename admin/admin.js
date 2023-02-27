@@ -21,7 +21,7 @@ themeToggler.addEventListener('click', () =>{
 
 
 
-fetch(`http://localhost:3000/adminData`)
+fetch(`https://test1-h9kd.onrender.com/adminData`)
 .then(res => res.json())
 .then((data) =>{
   let total = 0 ;
@@ -53,6 +53,6 @@ incomeData.innerText = price;
 
 let logOut = document.getElementById("logout");
 logOut.addEventListener("click", () =>{
-    window.location.href = "http://127.0.0.1:5501/index.html"
+    window.location.href = "/index.html"
 })
 

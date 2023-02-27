@@ -151,6 +151,30 @@
       "password": "naman121",
       "gender": "male",
       "id": 18
+    },
+    {
+      "firstName": "soham",
+      "lastName": "rajesh",
+      "email": "soham@gmail.com",
+      "password": "soham123",
+      "gender": "male",
+      "id": 19
+    },
+    {
+      "firstName": "12213",
+      "lastName": "2ee2e2",
+      "email": "121@gmail.com",
+      "password": "123",
+      "gender": "male",
+      "id": 20
+    },
+    {
+      "firstName": "32232",
+      "lastName": "424324",
+      "email": "eee",
+      "password": "222",
+      "gender": "male",
+      "id": 21
     }
   ],
   "women": [
@@ -1139,24 +1163,72 @@
       "desc": "edfr",
       "price": "edfrf",
       "id": "CSiOBLg"
+    },
+    {
+      "image": "dsfgd",
+      "name": "dsfrsg",
+      "brandName": "dfgfd",
+      "desc": "sdfgdf",
+      "price": "sdfgdr",
+      "id": "s72NNP_"
+    },
+    {
+      "image": "dfgdf",
+      "name": "dgdf",
+      "brandName": "dfgdf",
+      "desc": "dfhg",
+      "price": "dfhf",
+      "id": "8YjjFA2"
     }
   ],
   "adminData": [
     {
-      "image": "https://rukminim1.flixcart.com/image/832/832/kyxb9u80/t-shirt/k/n/y/xl-t67-nbwh-eyebogler-original-imagbfyc3rkzaj2y.jpeg?q=70",
-      "name": "EyeBogler",
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/b/m/i/l-t345-blwhrd-new-eyebogler-original-imafzr4f7nxecr44-bb.jpeg?q=70",
+      "name": "EyeCotton",
       "brandName": "Adidas",
-      "desc": "Men Striped Round Neck Blue T-Shirt",
-      "price": 299,
-      "id": "2"
+      "desc": "Men Color Block Hooded Neck Multicolor T-Shirt",
+      "price": 259,
+      "id": "4"
     },
     {
-      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/p/n/1/l-jc22-rn-fs-black-olv-never-jump-cuts-original-imaghcczhrhhfvud.jpeg?q=70",
-      "name": "Jump Cuts",
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/m/o/w/m-kcsh-110-bk-fubar-original-imagk3dnujyctse8.jpeg?q=70",
+      "name": "FUBAR",
+      "brandName": "Raymond",
+      "desc": "Men Slim Fit Solid Mandarin Collar Casual Shirt",
+      "price": 399,
+      "id": "14"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/9/2/b/-original-imaghhu3pybhsygr.jpeg?q=70",
+      "name": "HRX",
+      "brandName": "Turtle",
+      "desc": "Men Striped Round Neck Blue T-Shirt",
+      "price": 307,
+      "id": "23"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/832/832/kbb49zk0/jean/f/i/l/28-bmw-darklevis-d-ben-martin-original-imafszrtewykfqrv.jpeg?q=70",
+      "name": "BEN MARTIN",
       "brandName": "Adidas",
-      "desc": "Men Printed Round Neck Green, Black T-Shirt",
-      "price": 294,
-      "id": "3"
+      "desc": "Men Regular Mid Rise Blue Jeans",
+      "price": 629,
+      "id": "34"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/trouser/g/u/k/44-t353-trouser-baleno-sgrey-aa36-ad-av-original-imafsgerqwzmehgs-bb.jpeg?q=70",
+      "name": "AD&AV",
+      "brandName": "Adidas",
+      "desc": "Men Regular Fit Grey Cotton Blend Trousers",
+      "price": 389,
+      "id": "35"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shirt/k/3/x/xl-printed-shirt-for-men-foxter-original-imagktzmkg4wqwrv.jpeg?q=70",
+      "name": "Foxter",
+      "brandName": "Adidas",
+      "desc": "Men Regular Fit Printed Casual Shirt",
+      "price": 329,
+      "id": "1"
     }
   ]
 }
